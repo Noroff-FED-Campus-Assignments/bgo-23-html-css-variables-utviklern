@@ -1,4 +1,13 @@
 /* Reset some default browser styles */
+:root {
+    --white: #f0f0f0;
+    ---black: #333;
+    ---box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    ---space20: 20px;
+    ---radius: 5px
+
+}
+
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
@@ -10,20 +19,20 @@ body, h1, h2, p, ul {
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    color: #333;
-    background-color: #f0f0f0;
+    color: var(---black);
+    background-color:var(--white)
 }
 
 header {
-    background-color: #333;
-    color: #f0f0f0;
+    background-color: var(---black);
+    color: var(--white);
     text-align: center;
-    padding: 20px;
+    padding: var(---space20);
 }
 
 nav {
-    background-color: #333;
-    color: #f0f0f0;
+    background-color: var(---black);
+    color: var(--white);
     text-align: center;
     padding: 10px;
 }
@@ -34,40 +43,40 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 20px;
+    margin-right: var(---space20);
 }
 
 nav a {
     text-decoration: none;
-    color: #f0f0f0;
+    color: var(--white);
 }
 
 main {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: var(---space20);
 }
 
 section {
-    margin-bottom: 20px;
-    color: #333;
-    background-color: #f0f0f0;
-    padding: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(---space20);
+    color: var(---black);
+    background-color: var(--white);
+    padding: var(---space20);
+    box-shadow: var(---box-shadow);
 }
 
 /* Style for the service boxes */
 .service {
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    background-color: var(--white);
+    padding: var(---space20);
+    margin-bottom: var(---space20);
+    box-shadow: var(---box-shadow);
+    border-radius: var(---radius);
 }
 
 /* Style for service titles */
 .service h3 {
-    font-size: 20px;
+    font-size: var(---space20);
     margin-bottom: 10px;
 }
 
@@ -79,8 +88,8 @@ section {
 
 /* Style for the footer */
 footer {
-    background-color: #333;
-    color: #f0f0f0;
+    background-color: var(---black);
+    color: var(--white);
     padding: 20px 0;
     text-align: center;
 }
@@ -93,12 +102,12 @@ footer {
 
 /* Style for the contact form container */
 .contact-form form {
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    background-color: var(--white);
+    color: var(---black);
+    padding: var(---space20);
+    margin: var(---space20);
+    box-shadow: var(---box-shadow);
+    border-radius: var(---radius);
     text-align: left;
 }
 
@@ -115,16 +124,16 @@ footer {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: var(---radius);
 }
 
 /* Style for the submit button */
 .contact-form button {
-    background-color: #333;
-    color: #f0f0f0;
+    background-color: var(---black);
+    color: var(--white);
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: var(---radius);
     cursor: pointer;
     transition: background-color 0.3s;
 }
